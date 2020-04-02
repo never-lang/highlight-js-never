@@ -1,0 +1,23 @@
+enum Optional { Some{ value : int; }, Other, None }
+
+func getF(o : Optional) -> () -> int
+{
+    if let ( Optional::Some(value) = o)
+    {
+        let func() -> int { value }
+    }
+    else
+    {
+        let func() -> int { 1000 }
+    }
+}
+
+func main() -> int
+{
+    let o = Optional::Some(10);
+
+    getF(o)();
+
+    0
+}
+

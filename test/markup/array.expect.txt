@@ -1,0 +1,9 @@
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> <span class="hljs-params">-&gt; <span class="hljs-type">int</span>
+{</span></span>
+    printtab( [ [ <span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>, <span class="hljs-number">3.0</span> ],
+                [ <span class="hljs-number">3.0</span>, <span class="hljs-number">4.0</span>, <span class="hljs-number">5.0</span> ] ] : <span class="hljs-type">float</span>
+                        *
+              [ [ <span class="hljs-number">3.0</span>, <span class="hljs-number">4.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span> ],
+                [ <span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span> ],
+                [ <span class="hljs-number">8.0</span>, <span class="hljs-number">2.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span> ] ] : <span class="hljs-type">float</span> )
+}
