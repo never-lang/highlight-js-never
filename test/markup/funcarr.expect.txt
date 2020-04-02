@@ -1,12 +1,12 @@
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f1</span><span class="hljs-params">(a : <span class="hljs-type">int</span>, b : <span class="hljs-type">int</span>, c : <span class="hljs-type">int</span>)</span> <span class="hljs-params">-&gt; <span class="hljs-array">[D]</span> : () -&gt; <span class="hljs-type">int</span>
-{</span></span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f1</span><span class="hljs-params">(a : <span class="hljs-type">int</span>, b : <span class="hljs-type">int</span>, c : <span class="hljs-type">int</span>)</span> -&gt;<span class="hljs-params"> <span class="hljs-array">[D]</span> : () -&gt; <span class="hljs-type">int</span>
+</span></span>{
      [
-        <span class="hljs-keyword">let</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f1</span><span class="hljs-params">()</span> <span class="hljs-params">-&gt; <span class="hljs-type">int</span> {</span></span> a + b + c },
-        <span class="hljs-keyword">let</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f2</span><span class="hljs-params">()</span> <span class="hljs-params">-&gt; <span class="hljs-type">int</span> {</span></span> a + b - c }  
+        <span class="hljs-keyword">let</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f1</span><span class="hljs-params">()</span> -&gt;<span class="hljs-params"> <span class="hljs-type">int</span> </span></span>{ a + b + c },
+        <span class="hljs-keyword">let</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f2</span><span class="hljs-params">()</span> -&gt;<span class="hljs-params"> <span class="hljs-type">int</span> </span></span>{ a + b - c }  
      ] : () -&gt; <span class="hljs-type">int</span>
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> <span class="hljs-params">-&gt; <span class="hljs-type">int</span>
-{</span></span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> -&gt;<span class="hljs-params"> <span class="hljs-type">int</span>
+</span></span>{
     f1(<span class="hljs-number">80</span>, <span class="hljs-number">90</span>, <span class="hljs-number">100</span>)[<span class="hljs-number">1</span>]()
 }

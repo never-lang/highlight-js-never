@@ -1,4 +1,4 @@
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> <span class="hljs-params">-&gt; <span class="hljs-type">int</span>
-{</span></span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> -&gt;<span class="hljs-params"> <span class="hljs-type">int</span>
+</span></span>{
     <span class="hljs-number">0</span>
 }
