@@ -3,6 +3,7 @@ Language: Never
 Author: Slawomir Maludzinski <slawomir.maludzinski@gmail.com>
 Description: Syntactically scoped, strongly typed, call by value, functional programming language
 Website: https://never-lang.readthedocs.io/
+Category: functional
 */
 
 export default function(hljs) {
@@ -30,7 +31,6 @@ export default function(hljs) {
   var NEVER_TYPE = {
     className: 'type',
     begin: '\\b[A-Z][0-9A-Za-z$_]*',
-    relevance: 0
   }
   
   var NEVER_DIM = {
@@ -41,7 +41,6 @@ export default function(hljs) {
   var NEVER_FUNCTION = {
     className: 'function',
     beginKeywords: 'func', end: '{', excludeEnd: true,
-    relevance: 10,
     contains:
     [
       hljs.inherit(hljs.TITLE_MODE, {
@@ -62,7 +61,6 @@ export default function(hljs) {
         begin: /->/, end: /\{/,
         endsParent: true,
         keywords: NEVER_KEYWORDS,
-        relevance: 10,
         contains:
         [
           NEVER_DIM,
@@ -75,7 +73,6 @@ export default function(hljs) {
   var NEVER_ENUM_RECORD = {
     className: 'function',
     beginKeywords: 'enum record', end: '{', excludeEnd: true,
-    relevance: 10,
     contains:
     [
       hljs.inherit(hljs.TITLE_MODE, {
@@ -124,7 +121,7 @@ export default function(hljs) {
   return {
     name: 'never',
     aliases: [ 'Never ' ],
-    disableAutodetect: false,
+    disableAutodetect: true,
     case_insensitive: false, // language is case-sensitive
     keywords: NEVER_KEYWORDS,
     contains: [
