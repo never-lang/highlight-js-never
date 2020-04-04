@@ -7,4 +7,5 @@ first order functions and some mathematical functions to make it useful
 to calculate expressions. Also it demonstrates how functions can be compiled,
 invoked and passed as parameters or results between other functions.
 
+<https://never-lang.readthedocs.io/>
 
