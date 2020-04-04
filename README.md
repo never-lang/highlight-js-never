@@ -9,3 +9,14 @@ invoked and passed as parameters or results between other functions.
 
 <https://never-lang.readthedocs.io/>
 
+### Syntax highlighting
+
+To highlight never language code listings use the following html:
+
+```html
+    <link rel="stylesheet" href="./github.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./never.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+```
+
